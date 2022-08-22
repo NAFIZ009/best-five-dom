@@ -16,7 +16,7 @@ function addPlayerName(e) {
     if([...parent.children].some(element => element.getAttribute('id')=="noticeOfList")){
         parent.firstElementChild.remove();
     }
-    if (playerName.length<=5) {
+    if (parent.children.length<5) {
         let newOne=document.createElement('li');
         newOne.setAttribute('class','mt-3');
         newOne.innerText=playerName[0];
