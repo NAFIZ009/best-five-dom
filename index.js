@@ -31,9 +31,11 @@ function addPlayerName(e) {
 document.getElementById("priceCalBtn").addEventListener("click", function(e){
     playerPriceCal();
 });
+//calculate subtotal price
 document.getElementById("totalPriceCalBtn").addEventListener("click", function(e){
     subTotal();
 });
+//player price fun
 function playerPriceCal() {
     if(document.getElementById('playerPriceIndex').value.match(/^[a-zA-Z]+$/)){
         alert('give a valid price');
@@ -45,6 +47,7 @@ function playerPriceCal() {
     }
 
 }
+//subtotal price fun
 function subTotal() {
     let playerPriceValue=document.getElementById('priceRes').innerText;
     console.log(playerPriceValue);
